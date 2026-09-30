@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Organizational Information</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+<link rel="stylesheet" href="./assets/css/style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body class="body_organizationalinfo">
+
+<!-- ================= HEADER IMAGE (STICKY) ================= -->
+<div class="header-image sticky-top">
+  <img src="assets/images/Headers/Lion_Header.jpg" alt="Header Image">
+
+  <!-- ================= NAVBAR (STICKY) ================= -->
+<div class="custom-navbar">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <h6 class="text-white m-0">New Vendor Enrollment</h6>
+
+    <div>
+      <label class="text-white me-2">Change Language:</label>
+      <select class="form-select form-select-sm d-inline language-select">
+        <option>English</option>
+        <option>French</option>
+         <option>Spanish</option>
+      </select>
+    </div>
+  </div>
+</div>
+</div>
+<!-- ------------------Wizard----------------------- -->
+<div class="wizard-strip py-4">
+    <div class="container-fluid w-100">
+
+      <nav aria-label="Wizard Progress">
+        <ol class="wizard">
+
+          <!-- Step 1 (active like screenshot left) -->
+          <li class="wizard-step is-active">
+            <a class="wizard-link" href="#" aria-current="step">
+              <span class="wizard-circle">1</span>
+              <span class="wizard-label">Organizational Information</span>
+            </a>
+          </li>
+
+          <!-- Step 2 -->
+          <li class="wizard-step">
+            <a class="wizard-link" href="#">
+              <span class="wizard-circle">2</span>
+              <span class="wizard-label">Economic Sanctions - Counter Terrorism</span>
+            </a>
+          </li>
+
+          <!-- Step 3 -->
+          <li class="wizard-step">
+            <a class="wizard-link" href="#">
+              <span class="wizard-circle">3</span>
+              <span class="wizard-label">Electronic Banking Information</span>
+            </a>
+          </li>
+
+        </ol>
+      </nav>
+
+    </div>
+  </div>
+
+
+
+
+<!-- ================= FORM CONTAINER (ONE SINGLE DIV) ================= -->
+<div class="content-scroll-area">
+<div class="container-fluid mt-1 mb-4">
+
+  <div class="form-card small-card">
+
+    <p class="mb-4 org">Organizational Information</p>
+
+    <form>
+
+     <div class="mb-4">
+  <div class="d-flex align-items-center gap-4 flex-wrap">
+
+    <!-- Label -->
+    <label class="form-label mb-0">
+      US or Non-US Organization <span class="text-danger">*</span>
+    </label>
+
+    <!-- US Radio -->
+    <div class="form-check form-check-inline mb-0">
+      <input class="form-check-input radio-lg"
+             type="radio"
+             name="orgType"
+             id="usOrg">
+      <label class="form-check-label" for="usOrg">
+        US Organization
+      </label>
+    </div>
+
+    <!-- Non-US Radio -->
+    <div class="form-check form-check-inline mb-0">
+      <input class="form-check-input radio-lg"
+             type="radio"
+             name="orgType"
+             id="nonUsOrg">
+      <label class="form-check-label" for="nonUsOrg">
+        Non-US Organization
+      </label>
+    </div>
+
+  </div>
+</div>
+
+      <!-- Organization Name -->
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Organizational Legal Name<span class="text-danger">*</span></label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Organization Alias</label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+      </div>
+
+      <!-- Website -->
+      <div class="row">
+      <div class="col-md-6 mb-4">
+        <label class="form-label">Organization Website</label>
+        <input type="url" class="form-control custom-input-width dropdown_text">
+      </div>
+      </div>
+
+      <!-- Address -->
+      <p class="mt-2 mb-4 org">Organizational Headquarter Address</p>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Address Line 1<span class="text-danger">*</span></label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Address Line 2</label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+      </div>
+
+   <!-- <City----- and Country----> 
+<div class="row">
+        <div class="col-md-6 mb-4">
+          <label class="form-label">City<span class="text-danger">*</span></label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Country<span class="text-danger">*</span></label>
+          <select class="form-select custom-input-width dropdown_text">
+            <option class="dropdown_text">--Select--</option>
+            <option class="dropdown_text">Afghanistan</option>
+            <option class="dropdown_text">Albania</option>
+            <option class="dropdown_text">Algeria</option>
+            <option class="dropdown_text">Andorra</option>
+            <option class="dropdown_text">Bahamas</option>
+<option class="dropdown_text">Bahrain</option>
+<option class="dropdown_text">Bangladesh</option>
+<option class="dropdown_text">Barbados</option>
+<option class="dropdown_text">Cabo Verde</option>
+<option class="dropdown_text">Cambodia</option>
+<option class="dropdown_text">Cameroon</option>
+<option class="dropdown_text">Denmark</option>
+<option class="dropdown_text">Djibouti</option>
+<option class="dropdown_text">Germany</option>
+ 
+
+          </select>
+        </div>
+      </div>
+
+
+ <!-- <City----- and Zip Code----> 
+<div class="row">
+        <div class="col-md-6 mb-4">
+          
+          <label class="form-label">State<span class="text-danger">*</span></label>
+          <select class="form-select custom-input-width dropdown_text">
+            <option class="dropdown_text">--Select--</option>
+           <option class="dropdown_text">Kabul</option>
+<option class="dropdown_text">Herat</option>
+<option class="dropdown_text">Kandahar</option>
+<option class="dropdown_text">Tirana</option>
+<option class="dropdown_text">Durres</option>
+<option class="dropdown_text">Vlore</option>
+<option class="dropdown_text">Andorra la Vella</option>
+<option class="dropdown_text">Escaldes-Engordany</option>
+<option class="dropdown_text">Encamp</option>
+<option class="dropdown_text">New Providence</option>
+<option class="dropdown_text">Grand Bahama</option>
+<option class="dropdown_text">Abaco</option>
+          </select>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Zip/Country Code<span class="text-danger">*</span></label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+      </div>
+
+
+      <!-- Tax Info -->
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Organizational Tax Status<span class="text-danger">*</span></label>
+          <select class="form-select custom-input-width dropdown_text">
+            <option class="dropdown_text">--Select--</option>
+            <option class="dropdown_text">Recognized as tax-exempt by IRS as a 501(c)(3)</option>
+            <option class="dropdown_text">Recognized as tax-exempt under other IRS Tax Code</option>
+            <option class="dropdown_text">Recognized as non-taxable under a Non-US Country Tax Code</option>
+            <option class="dropdown_text">US for-profit(taxable)</option>
+                        <option class="dropdown_text">Non-US for-profit(taxable)</option>
+                                    <option class="dropdown_text">Other</option>
+          </select>
+        </div>
+
+        <div class="col-md-4 mb-4">
+  <label class="form-label">Evidence of Tax Status</label>
+
+  <div class="d-flex gap-2">
+    <input type="file" class="form-control custom-input-width dropdown_text">
+    <button class="btn-upload">Upload</button>
+  </div>
+</div>
+      </div>
+
+      <!-- Tax Info -->
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Federal Tax Identification/Employer Identification Number (EIN)<span class="text-danger">*</span></label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+
+        <div class="col-md-4 mb-4">
+  <label class="form-label">Evidence of the Organization's Legal Status</label>
+
+  <div class="d-flex gap-2">
+    <input type="file" class="form-control custom-input-width dropdown_text">
+    <button class="btn-upload">Upload</button>
+  </div>
+</div>
+      </div>
+
+
+
+      <!-- <City----- and Zip Code----> 
+<div class="row">
+        <div class="col-md-6 mb-4">
+          
+          <label class="form-label">State or Country of Establishment, Incorporation or, Registration</label>
+          <select class="form-select custom-input-width dropdown_text">
+            <option class="dropdown_text">--Select--</option>
+            <option class="dropdown_text">Afghanistan</option>
+            <option class="dropdown_text">Albania</option>
+            <option class="dropdown_text">Algeria</option>
+            <option class="dropdown_text">Andorra</option>
+            <option class="dropdown_text">Bahamas</option>
+            <option class="dropdown_text">Bahrain</option>
+            <option class="dropdown_text">Bangladesh</option>
+            <option class="dropdown_text">Barbados</option>
+            <option class="dropdown_text">Cabo Verde</option>
+            <option class="dropdown_text">Cambodia</option>
+            <option class="dropdown_text">Cameroon</option>
+            <option class="dropdown_text">Denmark</option>
+            <option class="dropdown_text">Djibouti</option>
+            <option class="dropdown_text">Germany</option>
+          </select>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Unique Entity Identifier, UEI (SAM)
+            <i class="fa-sharp fa-solid fa-circle-question fa-lg" style="color: #1f7a5c;"
+       data-bs-toggle="tooltip"
+       data-bs-placement="top"
+       title="The Unique Entity Identifier (UEI), issued by SAM.gov, is the authoritative identifier for those doing business with the U.S. Federal Government. Subrecipients receiving a subaward funded by the U.S. Federal Government must obtain a UEI from SAM.gov before a subaward can be issued.">
+    </i>
+          </label>
+
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+      </div>
+
+
+<!-- !-- <City----- and Zip Code---->  
+<div class="row">
+  <div class="col-md-6 mb-4">
+    <label class="form-label">
+      Organization Fiscal Year <span class="text-danger">*</span>
+    </label>
+
+    <div class="d-flex align-items-center gap-3">
+      
+      <!-- From -->
+      <select class="form-select custom-input-width-calender dropdown_text">
+        <option class="dropdown_text">--Select--</option>
+        <option class="dropdown_text">January</option>
+        <option class="dropdown_text">February</option>
+        <option class="dropdown_text">March</option>
+        <option class="dropdown_text">April</option>
+        <option class="dropdown_text">May</option>
+        <option class="dropdown_text">June</option>
+        <option class="dropdown_text">July</option>
+        <option class="dropdown_text">August</option>
+        <option class="dropdown_text">September</option>
+        <option class="dropdown_text">October</option>
+        <option class="dropdown_text">November</option>
+        <option class="dropdown_text">December</option>
+      </select>
+
+      <!-- TO -->
+      <span class="fw-semibold">To</span>
+
+      <!-- To -->
+      <select class="form-select custom-input-width-calender dropdown_text">
+        <option class="dropdown_text">--Select--</option>
+          <option class="dropdown_text">January</option>
+        <option class="dropdown_text">February</option>
+        <option class="dropdown_text">March</option>
+        <option class="dropdown_text">April</option>
+        <option class="dropdown_text">May</option>
+        <option class="dropdown_text">June</option>
+        <option class="dropdown_text">July</option>
+        <option class="dropdown_text">August</option>
+        <option class="dropdown_text">September</option>
+        <option class="dropdown_text">October</option>
+        <option class="dropdown_text">November</option>
+        <option class="dropdown_text">December</option>
+      </select>
+
+    </div>
+  </div>
+</div>
+        
+
+
+
+
+      <div class="mb-4 d-flex align-items-start gap-0">
+
+  <!-- Label -->
+  <label class="form-label mb-0" style="min-width: 250px;">
+    Total Value of FCDO Portfolio<span class="text-danger">*</span>
+  </label>
+
+  <!-- Vertical Radios -->
+  <div>
+   
+    <div class="form-check mb-2">
+    <input class="form-check-input radio-lg" type="radio" name="orgType" id="threshold1">
+    <label class="form-check-label" for="threshold1">
+      Threshold 1
+      <i class="fa-solid fa-circle-question fa-xl ms-1 tooltip-icon"
+         data-bs-toggle="tooltip"
+         data-bs-placement="top"
+         title="Your organization is the recipient or subrecipient of an individual FCDO contract of GBP 1 million or above, or two or more FCDO contracts with a combined value of GBP 5 million or above.">
+      </i>
+    </label>
+  </div>
+
+    <div class="form-check mb-2">
+    <input class="form-check-input radio-lg" type="radio" name="orgType" id="threshold2">
+    <label class="form-check-label" for="threshold2">
+      Threshold 2
+      <i class="fa-solid fa-circle-question fa-xl ms-1 tooltip-icon"
+         data-bs-toggle="tooltip"
+         data-bs-placement="top"
+         title="Your organization is the recipient or subrecipient of an individual FCDO contract value below GBP 1 million or two or more FCDO contracts with a value less than GBP 5 million.">
+      </i>
+    </label>
+  </div>
+
+  
+    <div class="form-check mb-2">
+    <input class="form-check-input radio-lg" type="radio" name="orgType" id="threshold3">
+    <label class="form-check-label" for="threshold3">
+      Threshold 3
+      <i class="fa-solid fa-circle-question fa-xl ms-1 tooltip-icon"
+         data-bs-toggle="tooltip"
+         data-bs-placement="top"
+         title="Your organization is the recipient or subrecipient of an individual FCDO contract value below the EU Threshold.">
+      </i>
+    </label>
+  </div>
+
+
+
+  
+  </div>
+</div>
+<!-- FCDO Identifications -->
+
+<div class="mb-4 d-flex align-items-start gap-0">
+
+  <!-- Label -->
+  <label class="form-label mb-0" style="min-width: 250px;">
+    FCDO Identifications<span class="text-danger">*</span>
+    <i class="fa-sharp fa-solid fa-circle-question fa-xl" style="color: #1f7a5c;"
+       data-bs-toggle="tooltip"
+       data-bs-placement="top"
+       title="If your organization is a UK business, check the following boxes, as appropriate.">
+    </i>
+  </label>
+
+  <!-- Vertical Radios -->
+  <div>
+        <div class="form-check mb-2">
+    <input class="form-check-input radio-lg" type="checkbox" name="orgType">
+    <label class="form-check-label">
+      Small or medium-sized enterprise(SME)
+      <i class="fa-solid fa-circle-question fa-xl  tooltip-icon"
+         data-bs-toggle="tooltip"
+         data-bs-placement="top"
+         title="In order to qualify as an SME, an enterprise must have: a) fewer than 250 staff, and b) less than or equal to £44 million in annual turnover or a balance sheet total of less than or equal to £38 million.">
+      </i>
+    </label>
+  </div>
+
+   <div>
+        <div class="form-check mb-2">
+    <input class="form-check-input radio-lg" type="checkbox" name="orgType">
+    <label class="form-check-label">
+      Women-owned business
+      <i class="fa-solid fa-circle-question fa-xl  tooltip-icon"
+         data-bs-toggle="tooltip"
+         data-bs-placement="top"
+         title="Generally, a business is considered women-owned if women hold at least 51% of the ownership or equity.">
+      </i>
+    </label>
+  </div>
+
+
+    
+  </div>
+
+</div>
+</div>
+      <!-- Buttons -->
+     <div class="text-center mt-4 d-flex justify-content-center gap-2">
+ <a href="index.html" class="same-btn">Back</a> 
+ <a href="Economicsanctions.html" class="same-btn">Save & Proceed</a>
+</div>
+
+    </form>
+  </div>
+</div>
+
+
+
+<footer class="wcs-footer">
+  <div class="container text-center py-3">
+    <div class="fw-semibold footer-title">Wildlife Conservation Society</div>
+
+    <div class="footer-text px-2">
+      
+        <span>2300 Southern Boulevard Bronx, New York 10460</span>
+    </div>
+
+  </div>
+
+</footer>
+</div>
+
+ <script src="assets/js/tooltip.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

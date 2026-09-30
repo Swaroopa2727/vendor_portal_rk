@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Electronic Banking Information</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body class="body_bankinginformation">
+
+<!-- ================= HEADER IMAGE (STICKY) ================= -->
+<div class="header-image sticky-top">
+  <img src="assets/images/Headers/Stringray_header.jpg" class="w-100" alt="Header Image">
+</div>
+
+<!-- ================= NAVBAR (STICKY) ================= -->
+<div class="custom-navbar">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <h6 class="text-white m-0">New Vendor Enrollment</h6>
+
+    <div>
+      <label class="text-white me-2">Change Language:</label>
+      <select class="form-select form-select-sm d-inline language-select">
+        <option>English</option>
+        <option>French</option>
+         <option>Spanish</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<!-- ------------------Wizard----------------------- -->
+<div class="wizard-strip py-4">
+    <div class="container-fluid w-100">
+
+      <nav aria-label="Wizard Progress">
+        <ol class="wizard">
+
+          <!-- Step 1 (active like screenshot left) -->
+          <li class="wizard-step">
+            <a class="wizard-link" href="#" aria-current="step">
+              <span class="wizard-circle">1</span>
+              <span class="wizard-label">Organizational Information</span>
+            </a>
+          </li>
+
+          <!-- Step 2 -->
+          <li class="wizard-step">
+            <a class="wizard-link" href="#">
+              <span class="wizard-circle">2</span>
+              <span class="wizard-label">Economic Sanctions - Counter Terrorism</span>
+            </a>
+          </li>
+
+          <!-- Step 3 -->
+          <li class="wizard-step is-active">
+            <a class="wizard-link" href="#">
+              <span class="wizard-circle">3</span>
+              <span class="wizard-label">Electronic Banking Information</span>
+            </a>
+          </li>
+
+        </ol>
+      </nav>
+
+    </div>
+  </div>
+
+
+<!-- ================= FORM CONTAINER (ONE SINGLE DIV) ================= -->
+ <div class="content-scroll-area">
+<div class="container-fluid mt-1 mb-4">
+
+  <div class="form-card small-card">
+
+    
+
+    <form>
+
+     <div class="mb-4">
+  <div class="d-flex align-items-center gap-4 flex-wrap">
+
+    <!-- Label -->
+    <label class="form-label mb-0">
+      Bank Account <span class="text-danger">*</span>
+    </label>
+
+    <!-- US Radio -->
+    <div class="form-check form-check-inline mb-0">
+      <input class="form-check-input radio-lg"
+             type="radio"
+             name="orgType"
+             id="usOrg">
+      <label class="form-check-label" for="usOrg">
+        US Organization
+      </label>
+    </div>
+
+    <!-- Non-US Radio -->
+    <div class="form-check form-check-inline mb-0">
+      <input class="form-check-input radio-lg"
+             type="radio"
+             name="orgType"
+             id="nonUsOrg">
+      <label class="form-check-label" for="nonUsOrg">
+        Non-US Organization
+      </label>
+    </div>
+
+  </div>
+</div>
+
+      <!-- Address -->
+      <p class="mt-3 mb-3 org">Organization Information:</p>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Organization Name<span class="text-danger">*</span></label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Bank Account#/IBAN<span class="text-danger">*</span></label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+      </div>
+
+   <!-- <City----- and Country----> 
+<div class="row">
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Name on Bank Account<span class="text-danger">*</span></label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Organization Address<span class="text-danger">*</span></label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+      </div>
+
+      
+
+ <!-- <City----- and Zip Code----> 
+<div class="row">
+        <div class="col-md-6 mb-4">
+          
+          <label class="form-label">Country<span class="text-danger">*</span></label>
+          <select class="form-select custom-input-width dropdown_text">
+            <option class="dropdown_text">--Select--</option>
+
+             <option class="dropdown_text">Afghanistan</option>
+            <option class="dropdown_text">Albania</option>
+            <option class="dropdown_text">Algeria</option>
+           
+            <option class="dropdown_text">Bahamas</option>
+
+<option class="dropdown_text">Bangladesh</option>
+<option class="dropdown_text">Barbados</option>
+<option class="dropdown_text">Cabo Verde</option>
+<option class="dropdown_text">Cambodia</option>
+<option class="dropdown_text">Cameroon</option>
+<option class="dropdown_text">Denmark</option>
+<option class="dropdown_text">Germany</option>
+
+
+          </select>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Organization State<span class="text-danger">*</span></label>
+          <select class="form-select custom-input-width dropdown_text">
+            <option class="dropdown_text">--Select--</option>
+             <option class="dropdown_text">Kabul</option>
+<option class="dropdown_text">Herat</option>
+<option class="dropdown_text">Kandahar</option>
+<option class="dropdown_text">Tirana</option>
+<option class="dropdown_text">Durres</option>
+<option class="dropdown_text">Vlore</option>
+
+<option class="dropdown_text">Escaldes-Engordany</option>
+<option class="dropdown_text">Encamp</option>
+<option class="dropdown_text">New Providence</option>
+<option class="dropdown_text">Abaco</option>
+
+          </select>
+        </div>
+         <div class="col-md-6 mb-4">
+          <label class="form-label">Remit to Email<span class="text-danger">*</span></label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+      </div>
+
+  
+ <!-- Address -->
+      <p class="mt-2 mb-3 org">Organization Bank Information:</p>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Bank Name<span class="text-danger">*</span></label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <label class="form-label">SWIFT/BIC Code<span class="text-danger">*</span></label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+      </div>
+
+   <!-- <City----- and Country----> 
+<div class="row">
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Bank Address<span class="text-danger">*</span></label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+
+       
+      </div>
+
+      
+
+ <!-- <City----- and Zip Code----> 
+<div class="row">
+        <div class="col-md-6 mb-4">
+          
+          <label class="form-label">Country<span class="text-danger">*</span></label>
+          <select class="form-select custom-input-width dropdown_text">
+            <option class="dropdown_text">--Select--</option>
+
+             <option class="dropdown_text">Afghanistan</option>
+            <option class="dropdown_text">Albania</option>
+            <option class="dropdown_text">Algeria</option>
+           
+            <option class="dropdown_text">Bahamas</option>
+
+<option class="dropdown_text">Bangladesh</option>
+<option class="dropdown_text">Barbados</option>
+<option class="dropdown_text">Cabo Verde</option>
+<option class="dropdown_text">Cambodia</option>
+<option class="dropdown_text">Cameroon</option>
+<option class="dropdown_text">Denmark</option>
+<option class="dropdown_text">Germany</option>
+
+          </select>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Bank State<span class="text-danger">*</span></label>
+          <select class="form-select custom-input-width dropdown_text">
+            <option class="dropdown_text">--Select--</option>
+                        <option class="dropdown_text">Kabul</option>
+<option class="dropdown_text">Herat</option>
+<option class="dropdown_text">Kandahar</option>
+<option class="dropdown_text">Tirana</option>
+<option class="dropdown_text">Durres</option>
+<option class="dropdown_text">Vlore</option>
+
+<option class="dropdown_text">Escaldes-Engordany</option>
+<option class="dropdown_text">Encamp</option>
+<option class="dropdown_text">New Providence</option>
+<option class="dropdown_text">Abaco</option>
+
+          </select>
+        </div>
+         </div>
+
+      
+
+        
+      <p class="mt-2 mb-3 org">Intermediary Bank Information:</p>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Bank Name</label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <label class="form-label">ABA Number</label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+      </div>
+
+   <!-- <City----- and Country----> 
+<div class="row">
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Bank Address</label>
+          <input type="text" class="form-control custom-input-width dropdown_text">
+        </div>
+
+       
+      </div>
+
+      
+
+ <!-- <City----- and Zip Code----> 
+<div class="row">
+        <div class="col-md-6 mb-4">
+          
+          <label class="form-label">Country</label>
+          <select class="form-select custom-input-width dropdown_text">
+            <option class="dropdown_text">--Select--</option>
+          <option class="dropdown_text">--Select--</option>
+             <option class="dropdown_text">Afghanistan</option>
+            <option class="dropdown_text">Albania</option>
+            <option class="dropdown_text">Algeria</option>
+           
+            <option class="dropdown_text">Bahamas</option>
+
+<option class="dropdown_text">Bangladesh</option>
+<option class="dropdown_text">Barbados</option>
+<option class="dropdown_text">Cabo Verde</option>
+<option class="dropdown_text">Cambodia</option>
+<option class="dropdown_text">Cameroon</option>
+<option class="dropdown_text">Denmark</option>
+<option class="dropdown_text">Germany</option>
+
+
+          </select>
+        </div>
+
+        <div class="col-md-6 mb-4">
+          <label class="form-label">Bank State</label>
+          <select class="form-select custom-input-width dropdown_text">
+            <option class="dropdown_text">--Select--</option>
+                       <option class="dropdown_text">Kabul</option>
+<option class="dropdown_text">Herat</option>
+<option class="dropdown_text">Kandahar</option>
+<option class="dropdown_text">Tirana</option>
+<option class="dropdown_text">Durres</option>
+<option class="dropdown_text">Vlore</option>
+
+<option class="dropdown_text">Escaldes-Engordany</option>
+<option class="dropdown_text">Encamp</option>
+<option class="dropdown_text">New Providence</option>
+<option class="dropdown_text">Abaco</option>
+
+          </select>
+        </div>
+         </div>
+ 
+
+
+
+     
+      <!-- Buttons -->
+     <div class="text-center mt-4 d-flex justify-content-center gap-2">
+ <a href="Economicsanctions.html" class="same-btn">Back</a> 
+ <a href="thankyou.html" class="same-btn">Save & Proceed</a>
+
+</div>
+
+    </form>
+  </div>
+</div>
+ 
+
+<footer class="wcs-footer">
+  <div class="container text-center py-3">
+    <div class="fw-semibold footer-title">Wildlife Conservation Society</div>
+
+    <div class="footer-text px-2">
+       
+        <span>2300 Southern Boulevard Bronx, New York 10460</span>
+    </div>
+
+  </div>
+
+</footer>
+</div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
